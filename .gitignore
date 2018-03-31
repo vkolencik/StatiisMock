@@ -130,3 +130,4 @@ target/
 
 
 # End of https://www.gitignore.io/api/java,kotlin,java-web,intellij+all
+.gradle
