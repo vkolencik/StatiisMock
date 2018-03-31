@@ -1,25 +1,25 @@
-#StatIIS mock endpoints
+# StatIIS mock endpoints
 
 Serves mock REST endpoints for StatIIS demo.
 
-##Prerequisities
+## Prerequisities
 Requires:
 * Java 10 JDK
 * Oracle 11 XE installed with restored database data, see [Restoring Database](#restoring-database)
 
 
-##Configuration
+## Configuration
  
 
-##Building
+## Building
 
 Runnable jar file is built by running gradle task `bootJar` which produces jarfile in the `build\libs` subdirectory.
 
-##Running
+## Running
 
 Resulting jar is run simply by `java -jar statiismock-XXX.jar`.
 
-##Restoring database
+## Restoring database
 
 1. Download Oracle XE from the [Official website](http://www.oracle.com/technetwork/database/database-technologies/express-edition/downloads/index.html)
 2. Copy database dump from <file:\\\frey\all\Projekty\PRE\StatIIS\s3_dump_20180328.zip> and unzip to a local directory `<dump>`
