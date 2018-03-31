@@ -10,6 +10,7 @@ Requires:
 
 ## Configuration
  
+ Set database connection info in `src/main/resources/application.properties` if it differs from the defaults.
 
 ## Building
 
