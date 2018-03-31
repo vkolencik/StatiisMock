@@ -6,5 +6,5 @@ import org.springframework.stereotype.Repository
 
 @Repository
 interface JdoDao : JpaRepository<JdoItem, Long> {
-
+    fun findByOznaceni(oznaceni: String): List<JdoItem>
 }

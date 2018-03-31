@@ -16,9 +16,7 @@ class JdoController {
     @GetMapping("/jdo")
     @ResponseBody
     fun getJdos(search: String): List<JdoItemDto> {
-        val example = JdoItem()
-        example.oznaceni = search
-        val jdo = jdoDao.findAll(Example.of(example)).stream().findFirst().get()
+        val jdo = jdoDao.findByOznaceni(search).stream().findFirst().get()
 
         val jdoDto = JdoItemDto(jdo.oznaceni, jdo.jid)
         return listOf(jdoDto)
